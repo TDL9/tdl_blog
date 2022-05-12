@@ -1,0 +1,47 @@
+= Contents =
+    - [[#网页|网页]]
+    - [[#软件、应用、扩展|软件、应用、扩展]]
+    - [[#Linux_Tools|Linux_Tools]]
+    - [[#misc|misc]]
+
+== 网页 ==
+
+有道翻译
+
+DeepL
+
+
+
+
+== 软件、应用、扩展 ==
+
+Vim (editor)
+
+Surfingkeys (browser extension for keyboard util)
+
+AutoHotkey (keyboard remap & hotkey)
+
+Everything (searching on local devices)
+
+Wireshark (network packet)
+
+== Linux_Tools ==
+
+zsh
+
+neofetch
+
+tmux
+
+
+
+
+
+
+
+== misc ==
+
+keyboard: https://wiki.glab.online/
+
+docker
+

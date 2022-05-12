@@ -9,7 +9,7 @@
 	<link rel='stylesheet' href='../assets/css/roboto.css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
     <script type="text/javascript" src="../assets/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-	<title>index</title>
+	<title>git</title>
 </head>
 <body>
     <a id="button"></a>
@@ -38,83 +38,177 @@
 
     <div class="container">
 		
-<div id="笔记"><h1 id="笔记" class="header"><a href="#笔记">笔记</a></h1></div>
+<div id="git tutor"><h1 id="git tutor" class="header"><a href="#git tutor">git tutor</a></h1></div>
 
 <p>
-<a href="git.html">Git</a>
+"""
+describe
 </p>
-
+<blockquote>
+git tutor | .
+</blockquote>
 <p>
-<a href="unity.html">Unity3D</a>
+as
 </p>
-
+<blockquote>
+"teach me git"
+</blockquote>
 <p>
-<a href="godot.html">Godot</a>
-</p>
-
-<p>
-<a href="vim.html">Vim</a>
-</p>
-
-
-<div id="笔记-分析"><h3 id="分析" class="header"><a href="#笔记-分析">分析</a></h3></div>
-
-<p>
-<a href="实分析.html">实分析</a>
-</p>
-
-<p>
-<a href="凸优化.html">凸优化</a>
-</p>
-
-<div id="笔记-代数"><h3 id="代数" class="header"><a href="#笔记-代数">代数</a></h3></div>
-
-<p>
-<a href="线性代数.html">线性代数</a>
-</p>
-
-<div id="笔记-逻辑&amp;计算"><h3 id="逻辑&amp;计算" class="header"><a href="#笔记-逻辑&amp;计算">逻辑&amp;计算</a></h3></div>
-
-<p>
-<a href="Complexity.html">Complexity</a>
-</p>
-
-<p>
-<a href="数理逻辑.html">数理逻辑</a>
-</p>
-
-<div id="笔记-应用&amp;其他"><h3 id="应用&amp;其他" class="header"><a href="#笔记-应用&amp;其他">应用&amp;其他</a></h3></div>
-
-<p>
-<a href="博弈论.html">博弈论</a>
+"""
 </p>
 
 
-<div id="笔记-几何 数论 组合"><h3 id="几何 数论 组合" class="header"><a href="#笔记-几何 数论 组合">几何 数论 组合</a></h3></div>
+<p>
+describe
+</p>
+<blockquote>
+git
+</blockquote>
+<p>
+as
+</p>
+<blockquote>
+distributed . version_control . system
+</blockquote>
 
-
-
-<div id="笔记-工具"><h2 id="工具" class="header"><a href="#笔记-工具">工具</a></h2></div>
 
 <p>
-<a href="Git.html">Git</a>
+abbr VCS (version_control system)
+abbr CVCS (Centralized VCS)
+abbr DVCS (Distributed VCS)
+</p>
+
+
+<p>
+comment
+</p>
+<blockquote>
+为什么你需要 DVCS:
+1/ <span class="todo">TODO</span> 
+2/ <span class="todo">TODO</span>
+3/ <span class="todo">TODO</span>
+ref
+<a href="https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-Git-%E7%AE%80%E5%8F%B2">https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-Git-%E7%AE%80%E5%8F%B2</a>
+</blockquote>
+
+<p>
+?
+</p>
+<blockquote>
+<a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control#Figure3">https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control#Figure3</a>
+</blockquote>
+
+<p>
+git.hash-alg = SHA-1 : File -&gt; ([16]^40 | 160 bits)
+git.db-index = git.hash
 </p>
 
 <p>
-<a href="Godot.html">Godot</a>
+git.states = modified | staged | committed
 </p>
 
 <p>
-<a href="Unity.html">Unity</a>
+LEFT
+</p>
+<blockquote>
+"GUI of git"
+"lazy git"
+diff package.git package.git-all
+ref <a href="https://packages.debian.org/sid/git-all">https://packages.debian.org/sid/git-all</a>
+</blockquote>
+<blockquote>
+ref
+<a href="https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E8%AE%B0%E5%BD%95%E6%AF%8F%E6%AC%A1%E6%9B%B4%E6%96%B0%E5%88%B0%E4%BB%93%E5%BA%93">https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E8%AE%B0%E5%BD%95%E6%AF%8F%E6%AC%A1%E6%9B%B4%E6%96%B0%E5%88%B0%E4%BB%93%E5%BA%93</a>
+"运行 git add 命令。 这是个多功能命令：可以用它开始跟踪新文件，或者把已跟踪的文件放到暂存区，还能用于合并时把有冲突的文件标记为已解决状态等。 将这个命令理解为“精确地将内容添加到下一次提交中”而不是“将一个文件添加到项目中”要更加合适。"
+</blockquote>
+<blockquote>
+git diff 的输出的意义
+</blockquote>
+    
+<p>
+comment
+</p>
+<blockquote>
+要养成一开始就为你的新仓库设置好 .gitignore 文件的习惯，以免将来误提交这类无用的文件。
+</blockquote>
+<blockquote>
+stage 概念上也是一份完整版本?
+</blockquote>
+<blockquote>
+记住，在 Git 中任何 已提交 的东西几乎总是可以恢复的。
+甚至那些被删除的分支中的提交或使用 --amend 选项覆盖的提交也可以。
+</blockquote>
+    
+<p>
+amend
 </p>
 
-<p>
-<a href="Vim.html">Vim</a>
-</p>
+
+
 
 <p>
-<a href="Vimwiki.html">Vimwiki</a>
+TARGET
 </p>
+<blockquote>
+comment
+things you may want to do
+</blockquote>
+<blockquote>
+def
+areas-
+1 : working directory
+2 : staged
+3 : tree
+4 : stash
+</blockquote>
+    
+<ul>
+<li>
+move file from area-x to area-y
+        1-&gt;2 : add
+        2-&gt;3 : commit
+        3-&gt;2 : restore --staged
+        2-&gt;1 : restore
+
+</ul>
+    
+<ul>
+<li>
+delete a file from area-x
+
+</ul>
+    
+<ul>
+<li>
+view all changes in a commit (or patch?)
+
+</ul>
+    
+<ul>
+<li>
+move a (maybe remote) branch?
+
+</ul>
+
+
+<p>
+LEFT
+</p>
+<blockquote>
+"mail"
+IMAP
+SMTP
+</blockquote>
+<blockquote>
+GPG
+all Chapter 7.4
+</blockquote>
+<blockquote>
+You can do a lot more with the fast-import tool – handle different modes, binary data, multiple branches and merging, tags, progress indicators, and more. A number of examples of more complex scenarios are available in the contrib/fast-import directory of the Git source code.
+</blockquote>
+<blockquote>
+.gitattributes
+</blockquote>
 
     </div>
 <!-- 

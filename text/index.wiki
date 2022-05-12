@@ -2,6 +2,21 @@
 
 欢迎，这是 TDL 的博客
 
-[[note/index|笔记]]
-[[tutor/index|教程]]
+[[note/index|笔记]] |
+[[tutor/index|教程]] |
+
+
+
+----
+
+关于本站
+
+本博客内容使用 [[https://github.com/vimwiki|Vimwiki]] 编写；
+
+使用 git 做版本控制，并托管在 github 上
+
+Vimwiki + git + github-pages
+
+模板：
+[[https://github.com/marianozunino/vimwiki-template|123]]
 

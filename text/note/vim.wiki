@@ -1,0 +1,19 @@
+记录学习 Vim 的过程，实用的技巧和资源
+
+
+== 学习经历/教程 ==
+
+首先完成 vim tutor
+
+
+== 资源 ==
+
+vimtutor : vim 自带? 的新手教程，命令行输入 vimtutor 即可打开。实际上就是使用 vim 打开教程 txt 文件。附有练习可供简单实践
+(命令行下进入实际上会复制一份，因此修改不会改变原教程)
+
+fandom wiki : https://vim.fandom.com/wiki/Vim_Tips_Wiki
+一些实用的技巧和教程，只有英语和日语，没有中文
+
+vim doc : :help vim
+
+vim 中文?
