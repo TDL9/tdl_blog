@@ -1,6 +1,7 @@
 全部页面，需手动更新 :VimwikiGenerateLinks
 
 = Generated Links =
+    - [[All pages]]
     - [[Resources]]
     - [[index]]
     - [[note/git]]
