@@ -1,0 +1,31 @@
+= Contents =
+            - [[#Linux manual 条目后面的括号是什么?|Linux manual 条目后面的括号是什么?]]
+            - [[#终端中如何输入EOF|终端中如何输入EOF]]
+
+=== Linux manual 条目后面的括号是什么? ===
+
+例如 man(1) read(2)
+
+1 - 可执行程序, shell 命令
+2 - 系统调用(内核提供的函数)
+3 - 库调用(库提供的函数)
+4 - 特殊文件(例如 /dev 里的那些设备文件)
+5 - 文件的格式和约定(例如 fstab, passwd)
+6 - 游戏 (这里面似乎没东西?)
+7 - 概述&杂项
+8 - 管理员命令
+
+ref : https://www.cnblogs.com/xy14/p/14640855.html
+
+ref : https://man7.org/linux/man-pages/index.html
+
+=== 终端中如何输入EOF ===
+
+windows系统：CTRL+Z。
+
+Linux/Unix/Mac操作系统：CTRL+D。
+
+https://blog.csdn.net/jackailson/article/details/116068445
+
+
+

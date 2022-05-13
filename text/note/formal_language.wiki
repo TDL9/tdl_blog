@@ -1,0 +1,13 @@
+
+
+BNF : a metasyntax notation for context-free grammars
+https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form
+
+EBNF
+ISO/IEC 14977:1996
+https://dwheeler.com/essays/dont-use-iso-14977-ebnf.html#problems
+
+W3C
+https://www.w3.org/TR/REC-xml/#sec-notation
+https://www.w3.org/Notation.html
+
