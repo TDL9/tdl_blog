@@ -1,17 +1,19 @@
 = 首页 =
 
-欢迎，这是 TDL 的博客
+欢迎，这是 TDL 的 wiki
 
 [[note/index|笔记]] |
 [[tutor/index|教程]] |
+[[blog/index|Blog]]
 
-[[All pages]]
+[[All pages]] |
+[[Resources]]
 
 ----
 
 关于本站
 
-本博客内容使用 [[https://github.com/vimwiki|Vimwiki]] 编写，vimwiki 语法与 markdown 略有不同，但是在 Vim 中十分方便；
+本站内容使用 [[https://github.com/vimwiki|Vimwiki]] 编写，vimwiki 语法与 markdown 略有不同，但是在 Vim 中十分方便；
 
 使用 git 做版本控制，并托管在 github 上
 

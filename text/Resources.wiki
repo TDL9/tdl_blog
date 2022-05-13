@@ -1,8 +1,12 @@
 = Contents =
-    - [[#网页|网页]]
-    - [[#软件、应用、扩展|软件、应用、扩展]]
-    - [[#Linux_Tools|Linux_Tools]]
-    - [[#misc|misc]]
+        - [[#网页|网页]]
+        - [[#软件、应用、扩展|软件、应用、扩展]]
+        - [[#Linux_Tools|Linux_Tools]]
+        - [[#misc|misc]]
+        - [[#功能型网页|功能型网页]]
+        - [[#待验证|待验证]]
+
+TODO : add entries in /note and /tutor
 
 == 网页 ==
 
@@ -44,4 +48,18 @@ tmux
 keyboard: https://wiki.glab.online/
 
 docker
+
+
+
+== 功能型网页 ==
+
+避免/防止 PC 睡眠休眠 : https://nosleep.page/
+
+查询网页是否挂掉 : https://isitdownorjustme.net/
+
+https://web.archive.org/
+
+json 浏览器/可视化 : https://jsonhero.io/
+
+== 待验证 ==
 
