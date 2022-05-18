@@ -2,9 +2,11 @@
         - [[#网页|网页]]
         - [[#软件、应用、扩展|软件、应用、扩展]]
         - [[#Linux_Tools|Linux_Tools]]
-        - [[#misc|misc]]
         - [[#功能型网页|功能型网页]]
-        - [[#待验证|待验证]]
+            - [[#功能型网页#待验证|待验证]]
+        - [[#教程、手册、书籍|教程、手册、书籍]]
+        - [[#游戏|游戏]]
+        - [[#misc|misc]]
 
 TODO : add entries in /note and /tutor
 
@@ -13,8 +15,6 @@ TODO : add entries in /note and /tutor
 有道翻译
 
 DeepL
-
-
 
 
 == 软件、应用、扩展 ==
@@ -29,6 +29,7 @@ Everything (searching on local devices)
 
 Wireshark (network packet)
 
+
 == Linux_Tools ==
 
 zsh
@@ -36,19 +37,6 @@ zsh
 neofetch
 
 tmux
-
-
-
-
-
-
-
-== misc ==
-
-keyboard: https://wiki.glab.online/
-
-docker
-
 
 
 == 功能型网页 ==
@@ -59,7 +47,25 @@ docker
 
 https://web.archive.org/
 
+=== 待验证 ===
+
 json 浏览器/可视化 : https://jsonhero.io/
 
-== 待验证 ==
+
+== 教程、手册、书籍 ==
+
+https://missing.csail.mit.edu/
+
+https://git-scm.com/book/en/v2
+
+== 游戏 ==
+
+
+== misc ==
+
+keyboard: https://wiki.glab.online/
+
+docker
+
+
 

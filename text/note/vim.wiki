@@ -17,3 +17,13 @@ fandom wiki : https://vim.fandom.com/wiki/Vim_Tips_Wiki
 vim doc : :help vim
 
 vim 中文?
+
+
+
+why my vim cursor look like this : I ?
+
+
+How does 'U' works?
+
+Ctrl-O? Ctrl-I
+

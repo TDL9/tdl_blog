@@ -1,19 +1,22 @@
 = Contents =
             - [[#Linux manual 条目后面的括号是什么?|Linux manual 条目后面的括号是什么?]]
             - [[#终端中如何输入EOF|终端中如何输入EOF]]
+            - [[#ls 结果的颜色|ls 结果的颜色]]
+            - [[#diff 比较两个目录/文件夹 directory directories folder|diff 比较两个目录/文件夹 directory directories folder]]
+            - [[#Unity 使用 vs code vscode 作为代码编辑器 editor|Unity 使用 vs code vscode 作为代码编辑器 editor]]
 
 === Linux manual 条目后面的括号是什么? ===
 
 例如 man(1) read(2)
 
-1 - 可执行程序, shell 命令
-2 - 系统调用(内核提供的函数)
-3 - 库调用(库提供的函数)
-4 - 特殊文件(例如 /dev 里的那些设备文件)
-5 - 文件的格式和约定(例如 fstab, passwd)
-6 - 游戏 (这里面似乎没东西?)
-7 - 概述&杂项
-8 - 管理员命令
+1. 可执行程序, shell 命令
+2. 系统调用(内核提供的函数)
+3. 库调用(库提供的函数)
+4. 特殊文件(例如 /dev 里的那些设备文件)
+5. 文件的格式和约定(例如 fstab, passwd)
+6. 游戏 (这里面似乎没东西?)
+7. 概述&杂项
+8. 管理员命令
 
 ref : https://www.cnblogs.com/xy14/p/14640855.html
 
@@ -27,5 +30,45 @@ Linux/Unix/Mac操作系统：CTRL+D。
 
 https://blog.csdn.net/jackailson/article/details/116068445
 
+(待验证)
 
+=== ls 结果的颜色 ===
+
+着色由 $LS_COLORS 环境变量控制
+
+默认的着色方案：
+
+- Uncolored(白色):文件或非文件名文本(例如ls -l输出中的权限)
+- 蓝色粗体：目录
+- 青色粗体：符号链接
+- 绿色粗体：可执行文件
+- 红色粗体：存档文件
+- 加粗品红：图像文件、视频、图形等或门或插座
+- 青色：音频文件
+
+...
+
+
+ref : https://www.cnblogs.com/a5idc/p/13445271.html
+
+ref : man ls
+
+ref : man dircolors
+
+ref : dircolors --print-database
+
+=== diff 比较两个目录/文件夹 directory directories folder ===
+
+diff -Naur <dir1> <dir2>
+
+- -N, treat absent files as empty
+- -u, output NUM (default 3) lines of unified context
+- -a, treat all files as text
+- -r, recursively compare any subdirectories found
+
+ref : https://blog.csdn.net/weixin_39278265/article/details/89633180
+
+=== Unity 使用 vs code vscode 作为代码编辑器 editor ===
+
+ref : https://code.visualstudio.com/docs/other/unity
 
