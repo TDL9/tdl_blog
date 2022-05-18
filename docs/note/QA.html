@@ -46,6 +46,15 @@
 <li>
 <a href="QA.html#终端中如何输入EOF">终端中如何输入EOF</a>
 
+<li>
+<a href="QA.html#ls 结果的颜色">ls 结果的颜色</a>
+
+<li>
+<a href="QA.html#diff 比较两个目录/文件夹 directory directories folder">diff 比较两个目录/文件夹 directory directories folder</a>
+
+<li>
+<a href="QA.html#Unity 使用 vs code vscode 作为代码编辑器 editor">Unity 使用 vs code vscode 作为代码编辑器 editor</a>
+
 </ul>
 
 <div id="Linux manual 条目后面的括号是什么?"><h3 id="Linux manual 条目后面的括号是什么?" class="header"><a href="#Linux manual 条目后面的括号是什么?">Linux manual 条目后面的括号是什么?</a></h3></div>
@@ -54,16 +63,32 @@
 例如 man(1) read(2)
 </p>
 
-<p>
-1 - 可执行程序, shell 命令
-2 - 系统调用(内核提供的函数)
-3 - 库调用(库提供的函数)
-4 - 特殊文件(例如 /dev 里的那些设备文件)
-5 - 文件的格式和约定(例如 fstab, passwd)
-6 - 游戏 (这里面似乎没东西?)
-7 - 概述&amp;杂项
-8 - 管理员命令
-</p>
+<ol>
+<li>
+可执行程序, shell 命令
+
+<li>
+系统调用(内核提供的函数)
+
+<li>
+库调用(库提供的函数)
+
+<li>
+特殊文件(例如 /dev 里的那些设备文件)
+
+<li>
+文件的格式和约定(例如 fstab, passwd)
+
+<li>
+游戏 (这里面似乎没东西?)
+
+<li>
+概述&amp;杂项
+
+<li>
+管理员命令
+
+</ol>
 
 <p>
 ref : <a href="https://www.cnblogs.com/xy14/p/14640855.html">https://www.cnblogs.com/xy14/p/14640855.html</a>
@@ -85,6 +110,96 @@ Linux/Unix/Mac操作系统：CTRL+D。
 
 <p>
 <a href="https://blog.csdn.net/jackailson/article/details/116068445">https://blog.csdn.net/jackailson/article/details/116068445</a>
+</p>
+
+<p>
+(待验证)
+</p>
+
+<div id="ls 结果的颜色"><h3 id="ls 结果的颜色" class="header"><a href="#ls 结果的颜色">ls 结果的颜色</a></h3></div>
+
+<p>
+着色由 $LS_COLORS 环境变量控制
+</p>
+
+<p>
+默认的着色方案：
+</p>
+
+<ul>
+<li>
+Uncolored(白色):文件或非文件名文本(例如ls -l输出中的权限)
+
+<li>
+蓝色粗体：目录
+
+<li>
+青色粗体：符号链接
+
+<li>
+绿色粗体：可执行文件
+
+<li>
+红色粗体：存档文件
+
+<li>
+加粗品红：图像文件、视频、图形等或门或插座
+
+<li>
+青色：音频文件
+
+</ul>
+
+<p>
+...
+</p>
+
+
+<p>
+ref : <a href="https://www.cnblogs.com/a5idc/p/13445271.html">https://www.cnblogs.com/a5idc/p/13445271.html</a>
+</p>
+
+<p>
+ref : man ls
+</p>
+
+<p>
+ref : man dircolors
+</p>
+
+<p>
+ref : dircolors --print-database
+</p>
+
+<div id="diff 比较两个目录/文件夹 directory directories folder"><h3 id="diff 比较两个目录/文件夹 directory directories folder" class="header"><a href="#diff 比较两个目录/文件夹 directory directories folder">diff 比较两个目录/文件夹 directory directories folder</a></h3></div>
+
+<p>
+diff -Naur &lt;dir1&gt; &lt;dir2&gt;
+</p>
+
+<ul>
+<li>
+-N, treat absent files as empty
+
+<li>
+-u, output NUM (default 3) lines of unified context
+
+<li>
+-a, treat all files as text
+
+<li>
+-r, recursively compare any subdirectories found
+
+</ul>
+
+<p>
+ref : <a href="https://blog.csdn.net/weixin_39278265/article/details/89633180">https://blog.csdn.net/weixin_39278265/article/details/89633180</a>
+</p>
+
+<div id="Unity 使用 vs code vscode 作为代码编辑器 editor"><h3 id="Unity 使用 vs code vscode 作为代码编辑器 editor" class="header"><a href="#Unity 使用 vs code vscode 作为代码编辑器 editor">Unity 使用 vs code vscode 作为代码编辑器 editor</a></h3></div>
+
+<p>
+ref : <a href="https://code.visualstudio.com/docs/other/unity">https://code.visualstudio.com/docs/other/unity</a>
 </p>
 
     </div>
