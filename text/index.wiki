@@ -4,10 +4,9 @@
 
 [[note/index|笔记]] |
 [[tutor/index|教程]] |
-[[blog/index|Blog]]
-
-[[All pages]] |
-[[Resources]]
+[[blog/index|Blog]] |
+[[Resources]] |
+[[All pages]]
 
 ----
 

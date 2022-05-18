@@ -1,0 +1,8 @@
+= Blog =
+
+[[game_review/index|游戏简评]]
+
+[[paradox|悖论]]
+
+
+
