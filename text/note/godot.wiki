@@ -13,3 +13,20 @@
 快捷键|Shortcut
 
 Editor -> Editor Settings -> Shortcuts
+
+== Tips ==
+
+遍历目录下所有文件
+
+{{{GDScript class="code"
+var sound_directory = Directory.new()
+sound_directory .open("res://Sounds")
+sound_directory.list_dir_begin(true)
+
+var sound = sound_directory.get_next()
+while sound != "":
+    sounds.append(load("res://Sounds/" + sound))
+    sound = sound_directory.get_next()
+}}}
+
+ref : https://www.reddit.com/r/godot/comments/904fnv/how_to_load_all_sound_files_existing_in_a/

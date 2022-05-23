@@ -1,0 +1,28 @@
+= 我记 note 的语法 =
+
+
+== 目标/设计思路 ==
+
+
+== Example ==
+
+this := note_syntax := help . mynote.syntax
+
+mynote.syntax :# "帮我快速查找，理解信息"
+
+this ∋
+    目标/设计思路
+    Example
+    待增加
+    待修改
+
+mynote.syntax ∈ loose . formal-lang
+
+
+
+== 待增加 ==
+
+== 待修改 ==
+
+
+

@@ -1,5 +1,8 @@
 = 笔记 =
 
+%% [[note_syntax]]
+
+
 [[git|Git]]
 
 [[unity|Unity3D]]

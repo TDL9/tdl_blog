@@ -1,4 +1,5 @@
 = Contents =
+        - [[#其他资源合集|其他资源合集]]
         - [[#网页|网页]]
         - [[#软件、应用、扩展|软件、应用、扩展]]
         - [[#Linux_Tools|Linux_Tools]]
@@ -7,8 +8,17 @@
         - [[#教程、手册、书籍|教程、手册、书籍]]
         - [[#游戏|游戏]]
         - [[#misc|misc]]
+        - [[#Game Dev Resources|Game Dev Resources]]
+        - [[#Game Dev Tools|Game Dev Tools]]
+            - [[#Game Dev Tools#unchecked|unchecked]]
 
-TODO : add entries in /note and /tutor
+TODO : 对于写过 note / tutor 的词条，应加上链接
+
+== 其他资源合集 ==
+
+现代CLI工具 : https://jvns.ca/blog/2022/04/12/a-list-of-new-ish--command-line-tools/
+
+
 
 == 网页 ==
 
@@ -29,15 +39,29 @@ Everything (searching on local devices)
 
 Wireshark (network packet)
 
+Atlassian:
+- Trello : A project management tool (可用于游戏开发 并非完全免费 web端)
+    - thx to @秦无邪OvO https://www.bilibili.com/video/BV1Qa4y1Y716
+- Jira : 差不多？
+- 对比 : 参考
+    - https://www.atlassian.com/software/jira/comparison/jira-vs-trello
+    - https://www.atlassian.com/zh/software/jira/comparison/jira-vs-trello#
+
+planka (Trello开源替代) https://planka.app/
+- 更多 : https://github.com/awesome-selfhosted/awesome-selfhosted#task-management--to-do-lists
+
+Gitea
 
 == Linux_Tools ==
 
-zsh
-
-neofetch
-
-tmux
-
+- zsh
+- neofetch
+- tmux
+- tldr
+- fd
+- mdp
+- vim
+- glow?
 
 == 功能型网页 ==
 
@@ -63,9 +87,22 @@ https://git-scm.com/book/en/v2
 
 == misc ==
 
-keyboard: https://wiki.glab.online/
+Keyboard: https://wiki.glab.online/
 
 docker
 
+== Game Dev Resources ==
 
+https://drawsgood.itch.io/8bit-deck-card-assets
 
+https://pixelodyssey.itch.io/2500-fantasy-rpg-icons
+
+https://crunchpix.itch.io/1446-rpg-skill-icon-pack
+
+https://kiwioyster.itch.io/black-white-simple-util-icon-for-rpg-maker
+
+== Game Dev Tools ==
+
+=== unchecked ===
+
+https://orama-interactive.itch.io/pixelorama

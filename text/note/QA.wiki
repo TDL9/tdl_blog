@@ -1,12 +1,13 @@
 = Contents =
-            - [[#Linux manual 条目后面的括号是什么?|Linux manual 条目后面的括号是什么?]]
-            - [[#终端中如何输入EOF|终端中如何输入EOF]]
-            - [[#ls 结果的颜色|ls 结果的颜色]]
-            - [[#diff 比较两个目录/文件夹 directory directories folder|diff 比较两个目录/文件夹 directory directories folder]]
-            - [[#Unity 使用 vs code vscode 作为代码编辑器 editor|Unity 使用 vs code vscode 作为代码编辑器 editor]]
-            - [[#Git Switch branch without files checkout 切换分支不改变 worktree index 文件|Git Switch branch without files checkout 切换分支不改变 worktree index 文件]]
-            - [[#Shell/Terminal/终端 freeze 卡住不动？|Shell/Terminal/终端 freeze 卡住不动？]]
-            - [[#tmux -ls 找不到 session 显示 failed to connect to server: Connection refused|tmux -ls 找不到 session 显示 failed to connect to server: Connection refused]]
+        - [[#Linux / Shell|Linux / Shell]]
+            - [[#Linux / Shell#Linux manual 条目后面的括号是什么?|Linux manual 条目后面的括号是什么?]]
+            - [[#Linux / Shell#终端中如何输入EOF|终端中如何输入EOF]]
+            - [[#Linux / Shell#ls 结果的颜色|ls 结果的颜色]]
+            - [[#Linux / Shell#diff 比较两个目录/文件夹 directory directories folder|diff 比较两个目录/文件夹 directory directories folder]]
+            - [[#Linux / Shell#Shell/Terminal/终端 freeze 卡住不动？|Shell/Terminal/终端 freeze 卡住不动？]]
+            - [[#Linux / Shell#tmux -ls 找不到 session 显示 failed to connect to server: Connection refused|tmux -ls 找不到 session 显示 failed to connect to server: Connection refused]]
+
+== Linux / Shell ==
 
 === Linux manual 条目后面的括号是什么? ===
 
@@ -70,20 +71,6 @@ diff -Naur <dir1> <dir2>
 
 ref : https://blog.csdn.net/weixin_39278265/article/details/89633180
 
-=== Unity 使用 vs code vscode 作为代码编辑器 editor ===
-
-ref : https://code.visualstudio.com/docs/other/unity
-
-=== Git Switch branch without files checkout 切换分支不改变 worktree index 文件 ===
-
-git symbolic-ref HEAD refs/heads/otherbranch
-
-ref : https://stackoverflow.com/questions/1282639/switch-git-branch-without-files-checkout
-
-*待验证*
-下面还有一个回答，只使用 git 基础指令 ("porcelain commands" in [[https://git-scm.com/book/en/v2|Progit]])
-基本上是借用一个临时分支进行 reset。而关键在于：当你 checkout 的分支和 HEAD 实际指向同一个 commit 时，worktree 不会被改动。
-
 === Shell/Terminal/终端 freeze 卡住不动？ ===
 
 你可能不小心按到 Ctrl+s 了，按 Ctrl+q 恢复
@@ -99,6 +86,7 @@ ref : https://zhuanlan.zhihu.com/p/478034266
 ref : https://stackoverflow.com/questions/9668763/why-am-i-getting-a-failed-to-connect-to-server-message-from-tmux-when-i-try-to
 
 (待验证)
+
 
 
 

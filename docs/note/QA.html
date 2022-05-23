@@ -41,23 +41,33 @@
 <div id="Contents" class="toc"><h1 id="Contents">Contents</a></h1></div>
 <ul>
 <li>
-<a href="QA.html#Linux manual 条目后面的括号是什么?">Linux manual 条目后面的括号是什么?</a>
+<a href="QA.html#Linux / Shell">Linux / Shell</a>
+
+<ul>
+<li>
+<a href="QA.html#Linux / Shell-Linux manual 条目后面的括号是什么?">Linux manual 条目后面的括号是什么?</a>
 
 <li>
-<a href="QA.html#终端中如何输入EOF">终端中如何输入EOF</a>
+<a href="QA.html#Linux / Shell-终端中如何输入EOF">终端中如何输入EOF</a>
 
 <li>
-<a href="QA.html#ls 结果的颜色">ls 结果的颜色</a>
+<a href="QA.html#Linux / Shell-ls 结果的颜色">ls 结果的颜色</a>
 
 <li>
-<a href="QA.html#diff 比较两个目录/文件夹 directory directories folder">diff 比较两个目录/文件夹 directory directories folder</a>
+<a href="QA.html#Linux / Shell-diff 比较两个目录/文件夹 directory directories folder">diff 比较两个目录/文件夹 directory directories folder</a>
 
 <li>
-<a href="QA.html#Unity 使用 vs code vscode 作为代码编辑器 editor">Unity 使用 vs code vscode 作为代码编辑器 editor</a>
+<a href="QA.html#Linux / Shell-Shell/Terminal/终端 freeze 卡住不动？">Shell/Terminal/终端 freeze 卡住不动？</a>
+
+<li>
+<a href="QA.html#Linux / Shell-tmux -ls 找不到 session 显示 failed to connect to server: Connection refused">tmux -ls 找不到 session 显示 failed to connect to server: Connection refused</a>
 
 </ul>
+</ul>
 
-<div id="Linux manual 条目后面的括号是什么?"><h3 id="Linux manual 条目后面的括号是什么?" class="header"><a href="#Linux manual 条目后面的括号是什么?">Linux manual 条目后面的括号是什么?</a></h3></div>
+<div id="Linux / Shell"><h2 id="Linux / Shell" class="header"><a href="#Linux / Shell">Linux / Shell</a></h2></div>
+
+<div id="Linux / Shell-Linux manual 条目后面的括号是什么?"><h3 id="Linux manual 条目后面的括号是什么?" class="header"><a href="#Linux / Shell-Linux manual 条目后面的括号是什么?">Linux manual 条目后面的括号是什么?</a></h3></div>
 
 <p>
 例如 man(1) read(2)
@@ -98,7 +108,7 @@ ref : <a href="https://www.cnblogs.com/xy14/p/14640855.html">https://www.cnblogs
 ref : <a href="https://man7.org/linux/man-pages/index.html">https://man7.org/linux/man-pages/index.html</a>
 </p>
 
-<div id="终端中如何输入EOF"><h3 id="终端中如何输入EOF" class="header"><a href="#终端中如何输入EOF">终端中如何输入EOF</a></h3></div>
+<div id="Linux / Shell-终端中如何输入EOF"><h3 id="终端中如何输入EOF" class="header"><a href="#Linux / Shell-终端中如何输入EOF">终端中如何输入EOF</a></h3></div>
 
 <p>
 windows系统：CTRL+Z。
@@ -109,14 +119,14 @@ Linux/Unix/Mac操作系统：CTRL+D。
 </p>
 
 <p>
-<a href="https://blog.csdn.net/jackailson/article/details/116068445">https://blog.csdn.net/jackailson/article/details/116068445</a>
+ref : <a href="https://blog.csdn.net/jackailson/article/details/116068445">https://blog.csdn.net/jackailson/article/details/116068445</a>
 </p>
 
 <p>
 (待验证)
 </p>
 
-<div id="ls 结果的颜色"><h3 id="ls 结果的颜色" class="header"><a href="#ls 结果的颜色">ls 结果的颜色</a></h3></div>
+<div id="Linux / Shell-ls 结果的颜色"><h3 id="ls 结果的颜色" class="header"><a href="#Linux / Shell-ls 结果的颜色">ls 结果的颜色</a></h3></div>
 
 <p>
 着色由 $LS_COLORS 环境变量控制
@@ -148,11 +158,10 @@ Uncolored(白色):文件或非文件名文本(例如ls -l输出中的权限)
 <li>
 青色：音频文件
 
-</ul>
-
-<p>
+<li>
 ...
-</p>
+
+</ul>
 
 
 <p>
@@ -171,7 +180,7 @@ ref : man dircolors
 ref : dircolors --print-database
 </p>
 
-<div id="diff 比较两个目录/文件夹 directory directories folder"><h3 id="diff 比较两个目录/文件夹 directory directories folder" class="header"><a href="#diff 比较两个目录/文件夹 directory directories folder">diff 比较两个目录/文件夹 directory directories folder</a></h3></div>
+<div id="Linux / Shell-diff 比较两个目录/文件夹 directory directories folder"><h3 id="diff 比较两个目录/文件夹 directory directories folder" class="header"><a href="#Linux / Shell-diff 比较两个目录/文件夹 directory directories folder">diff 比较两个目录/文件夹 directory directories folder</a></h3></div>
 
 <p>
 diff -Naur &lt;dir1&gt; &lt;dir2&gt;
@@ -196,10 +205,32 @@ diff -Naur &lt;dir1&gt; &lt;dir2&gt;
 ref : <a href="https://blog.csdn.net/weixin_39278265/article/details/89633180">https://blog.csdn.net/weixin_39278265/article/details/89633180</a>
 </p>
 
-<div id="Unity 使用 vs code vscode 作为代码编辑器 editor"><h3 id="Unity 使用 vs code vscode 作为代码编辑器 editor" class="header"><a href="#Unity 使用 vs code vscode 作为代码编辑器 editor">Unity 使用 vs code vscode 作为代码编辑器 editor</a></h3></div>
+<div id="Linux / Shell-Shell/Terminal/终端 freeze 卡住不动？"><h3 id="Shell/Terminal/终端 freeze 卡住不动？" class="header"><a href="#Linux / Shell-Shell/Terminal/终端 freeze 卡住不动？">Shell/Terminal/终端 freeze 卡住不动？</a></h3></div>
 
 <p>
-ref : <a href="https://code.visualstudio.com/docs/other/unity">https://code.visualstudio.com/docs/other/unity</a>
+你可能不小心按到 Ctrl+s 了，按 Ctrl+q 恢复
+</p>
+
+<div id="Linux / Shell-tmux -ls 找不到 session 显示 failed to connect to server: Connection refused"><h3 id="tmux -ls 找不到 session 显示 failed to connect to server: Connection refused" class="header"><a href="#Linux / Shell-tmux -ls 找不到 session 显示 failed to connect to server: Connection refused">tmux -ls 找不到 session 显示 failed to connect to server: Connection refused</a></h3></div>
+
+<p>
+Try sending SIGUSR1 signal to the tmux server process.
+</p>
+
+<p>
+kill -s USR1 7139
+</p>
+
+<p>
+ref : <a href="https://zhuanlan.zhihu.com/p/478034266">https://zhuanlan.zhihu.com/p/478034266</a>
+</p>
+
+<p>
+ref : <a href="https://stackoverflow.com/questions/9668763/why-am-i-getting-a-failed-to-connect-to-server-message-from-tmux-when-i-try-to">https://stackoverflow.com/questions/9668763/why-am-i-getting-a-failed-to-connect-to-server-message-from-tmux-when-i-try-to</a>
+</p>
+
+<p>
+(待验证)
 </p>
 
     </div>

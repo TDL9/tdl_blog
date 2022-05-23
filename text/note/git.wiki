@@ -1,24 +1,23 @@
-= git pre tutor =
+= git note =
 
-"""
-describe
-    git tutor | .
-as
-    "teach me git"
-"""
+{{{
 
+this = git_note :# "teach me git"
+git_note ∋ 
+    原理
+    细节
+    资源
 
-describe
-    git
-as
-    distributed . version_control . system
+git ∈ distributed . version_control . system
 
-
-abbr VCS (version_control system)
-abbr CVCS (Centralized VCS)
-abbr DVCS (Distributed VCS)
+VCS <<- version_control system
+CVCS <<- Centralized VCS
+DVCS <<- Distributed VCS
+}}}
 
 
+
+{{{
 comment
     为什么你需要 DVCS:
     1/ TODO 
@@ -30,10 +29,11 @@ comment
 ?
     https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control#Figure3
 
-git.hash-alg = SHA-1 : File -> ([16]^40 | 160 bits)
+git.hash-alg = SHA-1 : Any -> ([16]^40 | 160 bits)
 git.db-index = git.hash
 
 git.states = modified | staged | committed
+
 
 LEFT
     "GUI of git"
@@ -96,3 +96,28 @@ LEFT
     
     .gitattributes
     
+}}}
+
+
+== Tips ==
+
+=== git diff 输出的结果什么意思？ ===
+
+ref : https://blog.csdn.net/shaotianyang12/article/details/122025393
+
+=== Git Switch branch without files checkout 切换分支不改变 worktree index 文件 ===
+
+git symbolic-ref HEAD refs/heads/otherbranch
+
+ref : https://stackoverflow.com/questions/1282639/switch-git-branch-without-files-checkout
+
+*待验证*
+下面还有一个回答，只使用 git 基础指令 ("porcelain commands" in [[https://git-scm.com/book/en/v2|Progit]])
+基本上是借用一个临时分支进行 reset。而关键在于：当你 checkout 的分支和 HEAD 实际指向同一个 commit 时，worktree 不会被改动。
+
+=== github personal access tokens 在哪？ ===
+
+右上角头像 -> Settings -> 左侧 Developer settings -> 左侧 Personal access tokens
+
+
+
