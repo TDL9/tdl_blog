@@ -138,16 +138,123 @@ LEFT
     
 </pre>
 
+<div id="git note-git 查看信息专题"><h2 id="git 查看信息专题" class="header"><a href="#git note-git 查看信息专题">git 查看信息专题</a></h2></div>
 
-<div id="git note-Tips"><h2 id="Tips" class="header"><a href="#git note-Tips">Tips</a></h2></div>
+<div id="git note-git 查看信息专题-git查看提交修改的文件列表 / commit相关信息"><h3 id="git查看提交修改的文件列表 / commit相关信息" class="header"><a href="#git note-git 查看信息专题-git查看提交修改的文件列表 / commit相关信息">git查看提交修改的文件列表 / commit相关信息</a></h3></div>
 
-<div id="git note-Tips-git diff 输出的结果什么意思？"><h3 id="git diff 输出的结果什么意思？" class="header"><a href="#git note-Tips-git diff 输出的结果什么意思？">git diff 输出的结果什么意思？</a></h3></div>
+<p>
+git show / git log 技巧
+</p>
+
+<p>
+todo : <a href="https://blog.csdn.net/hunter168_wang/article/details/121497595">https://blog.csdn.net/hunter168_wang/article/details/121497595</a>
+</p>
+
+<div id="git note-git 查看信息专题-git 查看暂存区"><h3 id="git 查看暂存区" class="header"><a href="#git note-git 查看信息专题-git 查看暂存区">git 查看暂存区</a></h3></div>
+
+<p>
+todo : <a href="https://blog.csdn.net/qq_40021015/article/details/121741959">https://blog.csdn.net/qq_40021015/article/details/121741959</a>
+</p>
+
+<div id="git note-git 查看信息专题-git diff 技巧"><h3 id="git diff 技巧" class="header"><a href="#git note-git 查看信息专题-git diff 技巧">git diff 技巧</a></h3></div>
+
+<p>
+todo : <a href="https://blog.csdn.net/weixin_44038264/article/details/119729593">https://blog.csdn.net/weixin_44038264/article/details/119729593</a>
+</p>
+
+<div id="git note-git 查看信息专题-git diff 输出的结果什么意思？"><h3 id="git diff 输出的结果什么意思？" class="header"><a href="#git note-git 查看信息专题-git diff 输出的结果什么意思？">git diff 输出的结果什么意思？</a></h3></div>
 
 <p>
 ref : <a href="https://blog.csdn.net/shaotianyang12/article/details/122025393">https://blog.csdn.net/shaotianyang12/article/details/122025393</a>
 </p>
 
-<div id="git note-Tips-Git Switch branch without files checkout 切换分支不改变 worktree index 文件"><h3 id="Git Switch branch without files checkout 切换分支不改变 worktree index 文件" class="header"><a href="#git note-Tips-Git Switch branch without files checkout 切换分支不改变 worktree index 文件">Git Switch branch without files checkout 切换分支不改变 worktree index 文件</a></h3></div>
+
+<hr />
+
+<div id="git note-开放问题"><h2 id="开放问题" class="header"><a href="#git note-开放问题">开放问题</a></h2></div>
+
+<div id="git note-开放问题-如何避免提交debug用的代码（如输出中间变量）"><h3 id="如何避免提交debug用的代码（如输出中间变量）" class="header"><a href="#git note-开放问题-如何避免提交debug用的代码（如输出中间变量）">如何避免提交debug用的代码（如输出中间变量）</a></h3></div>
+
+<div id="git note-开放问题-如何避免提交debug用的代码（如输出中间变量）-solution_1"><h4 id="solution_1" class="header"><a href="#git note-开放问题-如何避免提交debug用的代码（如输出中间变量）-solution_1">solution_1</a></h4></div>
+
+<p>
+<a href="https://blog.jonschneider.com/2021/01/configuring-git-to-prevent-commits-of.html">https://blog.jonschneider.com/2021/01/configuring-git-to-prevent-commits-of.html</a>
+</p>
+
+<p>
+用 pre-commit hook 检查是否存在 "DONOTCOMMIT"
+</p>
+
+<pre bash class="code">
+#!/bin/bash
+
+FOUND=$(git diff-index --cached -U0 HEAD -- | grep DONOTCOMMIT | wc -l)
+
+if [[ $FOUND -gt 0 ]]; then
+    echo "pre-commit hook: DONOTCOMMIT detected, commit not allowed"
+    echo "(enforced from: ~/.git_templates/hooks/pre-commit)"
+    exit 1
+fi
+</pre>
+
+<p>
+缺点：需要手动删除 / commit -p
+</p>
+
+<p>
+其他相似 pre-commit hook :
+</p>
+<ul>
+<li>
+<a href="https://gist.github.com/wacko/62560b45c1d191859d6b">https://gist.github.com/wacko/62560b45c1d191859d6b</a>
+
+<li>
+<a href="https://anotherdatum.com/avoid-committing-junk.html">https://anotherdatum.com/avoid-committing-junk.html</a>
+
+</ul>
+
+<div id="git note-开放问题-如何避免提交debug用的代码（如输出中间变量）-solution_2"><h4 id="solution_2" class="header"><a href="#git note-开放问题-如何避免提交debug用的代码（如输出中间变量）-solution_2">solution_2</a></h4></div>
+
+<p>
+<a href="https://stackoverflow.com/questions/43896214/how-to-not-commit-temporary-debug-statements">https://stackoverflow.com/questions/43896214/how-to-not-commit-temporary-debug-statements</a>
+</p>
+
+<p>
+新建分支 <code>hotfix</code> 开发和debug，再 cherry-pick。
+</p>
+
+<pre bash class="code">
+git checkout master
+git cherry-pick hotfix
+# solve the conflict files manually and keep the form you want
+git add .
+git cherry-pick --continue
+</pre>
+
+<p>
+基本没用，cherry-pick 尚不支持 --patch。你需要
+</p>
+<pre>
+git cherry-pick -n &lt;commit&gt; (--no-commit)
+git reset
+git add -p
+</pre>
+<p>
+没有提示也非强制，还是可能误提交。
+</p>
+
+<p>
+ref : <a href="https://stackoverflow.com/questions/1526044/partly-cherry-picking-a-commit-with-git">https://stackoverflow.com/questions/1526044/partly-cherry-picking-a-commit-with-git</a>
+</p>
+
+
+
+<hr />
+
+
+<div id="git note-Tips"><h2 id="Tips" class="header"><a href="#git note-Tips">Tips</a></h2></div>
+
+<div id="git note-Tips-Git Switch branch without files checkout | 切换分支不改变 worktree index 文件"><h3 id="Git Switch branch without files checkout | 切换分支不改变 worktree index 文件" class="header"><a href="#git note-Tips-Git Switch branch without files checkout | 切换分支不改变 worktree index 文件">Git Switch branch without files checkout | 切换分支不改变 worktree index 文件</a></h3></div>
 
 <p>
 git symbolic-ref HEAD refs/heads/otherbranch
@@ -158,7 +265,7 @@ ref : <a href="https://stackoverflow.com/questions/1282639/switch-git-branch-wit
 </p>
 
 <p>
-<span id="git note-Tips-Git Switch branch without files checkout 切换分支不改变 worktree index 文件-待验证"></span><strong id="待验证">待验证</strong>
+<span id="git note-Tips-Git Switch branch without files checkout | 切换分支不改变 worktree index 文件-待验证"></span><strong id="待验证">待验证</strong> : 
 下面还有一个回答，只使用 git 基础指令 ("porcelain commands" in <a href="https://git-scm.com/book/en/v2">Progit</a>)
 基本上是借用一个临时分支进行 reset。而关键在于：当你 checkout 的分支和 HEAD 实际指向同一个 commit 时，worktree 不会被改动。
 </p>
@@ -169,7 +276,50 @@ ref : <a href="https://stackoverflow.com/questions/1282639/switch-git-branch-wit
 右上角头像 -&gt; Settings -&gt; 左侧 Developer settings -&gt; 左侧 Personal access tokens
 </p>
 
+<div id="git note-Tips-全局 hook"><h3 id="全局 hook" class="header"><a href="#git note-Tips-全局 hook">全局 hook</a></h3></div>
+
+<pre bash class="code">
+git config --global init.templatedir '~/.git_template'
+</pre>
+
+<p>
+将 hooks 放入 <code>~/.git_template/hooks</code> 即可。
+</p>
+
+<p>
+ref : <a href="https://stackoverflow.com/questions/2293498/applying-a-git-post-commit-hook-to-all-current-and-future-repositories">https://stackoverflow.com/questions/2293498/applying-a-git-post-commit-hook-to-all-current-and-future-repositories</a>
+</p>
+
+<p>
+已经存在的 repo，可再次运行 <code>git init</code> 来应用 template
+</p>
+
+<p>
+ref : <a href="https://git-scm.com/docs/git-init">https://git-scm.com/docs/git-init</a>
+</p>
+
+<div id="git note-Tips-搭建 ssh git 服务器"><h3 id="搭建 ssh git 服务器" class="header"><a href="#git note-Tips-搭建 ssh git 服务器">搭建 ssh git 服务器</a></h3></div>
+
+<p>
+基本只要在能够 ssh 的服务器上，通过 <code>git init --bare</code> 初始化一个裸仓库就可以了。
+</p>
+
+<p>
+更详细请参考 : <a href="https://zhuanlan.zhihu.com/p/146408354">https://zhuanlan.zhihu.com/p/146408354</a>
+</p>
+
+<p>
+todo : 配置 ssh 密钥部分
+</p>
+
+<p>
+还可通过 <code>git instaweb</code> 启动一个简单的网页服务，浏览 repo 信息。
+</p>
+
+        <hr>
+        <p><small>Last update on 2022-05-29</small></p>
     </div>
+
 <!-- 
     <footer class="page-footer font-small stylish-color-dark fixed-bottom">
       <div class="footer-copyright text-right py-2">

@@ -62,6 +62,12 @@
 <li>
 <a href="QA.html#Linux / Shell-tmux -ls 找不到 session 显示 failed to connect to server: Connection refused">tmux -ls 找不到 session 显示 failed to connect to server: Connection refused</a>
 
+<li>
+<a href="QA.html#Linux / Shell-Shebang line">Shebang line</a>
+
+<li>
+<a href="QA.html#Linux / Shell-实时查看Nvidia-smi的使用情况（自动刷新）">实时查看Nvidia-smi的使用情况（自动刷新）</a>
+
 </ul>
 </ul>
 
@@ -233,7 +239,46 @@ ref : <a href="https://stackoverflow.com/questions/9668763/why-am-i-getting-a-fa
 (待验证)
 </p>
 
+<div id="Linux / Shell-Shebang line"><h3 id="Shebang line" class="header"><a href="#Linux / Shell-Shebang line">Shebang line</a></h3></div>
+
+<p>
+<code>#!PATH_TO_INTERPRETER</code>
+</p>
+
+<p>
+todo ref : <a href="https://blog.csdn.net/u012294618/article/details/78427864">https://blog.csdn.net/u012294618/article/details/78427864</a>
+</p>
+
+<div id="Linux / Shell-实时查看Nvidia-smi的使用情况（自动刷新）"><h3 id="实时查看Nvidia-smi的使用情况（自动刷新）" class="header"><a href="#Linux / Shell-实时查看Nvidia-smi的使用情况（自动刷新）">实时查看Nvidia-smi的使用情况（自动刷新）</a></h3></div>
+
+<ol>
+<li>
+定时刷新
+
+</ol>
+<p>
+watch -n 2 -d nvidia-smi
+每隔2秒刷新一次，每次只在固定位置刷新
+</p>
+
+<ol>
+<li>
+定时查询
+
+</ol>
+<p>
+nvidia-smi -l 2
+每隔2秒查询一下，但是每次的查询结果会接着上一个往下刷新，导致持续扩张terminal的历史log
+</p>
+
+<p>
+ref : <a href="https://blog.csdn.net/clksjx/article/details/120211061">https://blog.csdn.net/clksjx/article/details/120211061</a>
+</p>
+
+        <hr>
+        <p><small>Last update on 2022-05-29</small></p>
     </div>
+
 <!-- 
     <footer class="page-footer font-small stylish-color-dark fixed-bottom">
       <div class="footer-copyright text-right py-2">

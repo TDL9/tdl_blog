@@ -9,7 +9,7 @@
 	<link rel='stylesheet' href='../assets/css/roboto.css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
     <script type="text/javascript" src="../assets/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-	<title>index</title>
+	<title>c_sharp</title>
 </head>
 <body>
     <a id="button"></a>
@@ -38,18 +38,75 @@
 
     <div class="container">
 		
-<div id="教程"><h1 id="教程" class="header"><a href="#教程">教程</a></h1></div>
+<div id="基本语法"><h2 id="基本语法" class="header"><a href="#基本语法">基本语法</a></h2></div>
+
+<pre>
+var names = new List&lt;string&gt; { "&lt;name&gt;", "Ana", "Felipe" };
+foreach (var name in names)
+{
+  Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+</pre>
+
+<div id="C#中 #region指令"><h2 id="C#中 #region指令" class="header"><a href="#C#中 #region指令">C#中 #region指令</a></h2></div>
 
 <p>
-<a href="unity.html">Unity</a>
+#region是一个分块预处理命令，它主要用于编辑代码的分段，在编译时会被自动删除。
 </p>
 
 <p>
-<a href="git.html">Git</a>
+#region使你可以在使用VS代码编辑器的大纲显示功能时指定可展开或折叠的代码块。
+</p>
+
+<p>
+例如：
+</p>
+
+<pre C# class="code">
+#region  REGION_NAME
+public class MyClass
+{
+    static void Main() 
+    {
+        ...
+    }
+}
+#endregion
+</pre>
+
+<p>
+备注：#region块必须以#endregion指令终止。
+</p>
+
+<p>
+#region块不能与#if块重叠。但是，可以将#region块嵌套在#if块内，或将#if块嵌套在#region块内。
+</p>
+
+<p>
+ref : <a href="https://www.cnblogs.com/johnpher/archive/2012/11/16/2773154.html">https://www.cnblogs.com/johnpher/archive/2012/11/16/2773154.html</a>
+</p>
+
+
+<div id="&quot;?&quot; 相关语法 / Nullable 语法糖"><h2 id="&quot;?&quot; 相关语法 / Nullable 语法糖" class="header"><a href="#&quot;?&quot; 相关语法 / Nullable 语法糖">"?" 相关语法 / Nullable 语法糖</a></h2></div>
+
+<pre C# class="code">
+type? identifier;   // Nullable
+x?y:z               // ternary conditional operator, as in C
+a??b                //
+a?.b                //
+a?[i]               //
+</pre>
+
+<p>
+ref : <a href="https://www.cnblogs.com/youmingkuang/p/11459615.html">https://www.cnblogs.com/youmingkuang/p/11459615.html</a>
+</p>
+
+<p>
+ref : <a href="https://blog.csdn.net/ldy/article/details/104586969?spm=1001.2101.3001.6650.4&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-4-104586969-blog-108887398.pc_relevant_scanpaymentv1&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-4-104586969-blog-108887398.pc_relevant_scanpaymentv1&amp;utm_relevant_index=9">https://blog.csdn.net/ldy/article/details/104586969?spm=1001.2101.3001.6650.4&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-4-104586969-blog-108887398.pc_relevant_scanpaymentv1&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-4-104586969-blog-108887398.pc_relevant_scanpaymentv1&amp;utm_relevant_index=9</a> 
 </p>
 
         <hr>
-        <p><small>Last update on 2022-05-29</small></p>
+        <p><small>Last update on 2022-06-03</small></p>
     </div>
 
 <!-- 
