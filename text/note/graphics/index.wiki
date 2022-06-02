@@ -1,0 +1,23 @@
+= 计算机图形学 / Computer Graphics =
+
+
+== Color ==
+
+
+== Camera ==
+
+
+== Render ==
+
+
+== Shader ==
+
+学习资料
+- 文档/教学:
+    - godot docs : https://docs.godotengine.org/en/stable/tutorials/shaders/index.html
+    - the book of shaders : https://thebookofshaders.com/
+- 例子:
+    - shader toy : https://www.shadertoy.com/
+    - 
+
+%plainhtml <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/MdX3zr?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>

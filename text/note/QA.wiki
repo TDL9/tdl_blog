@@ -6,6 +6,8 @@
             - [[#Linux / Shell#diff 比较两个目录/文件夹 directory directories folder|diff 比较两个目录/文件夹 directory directories folder]]
             - [[#Linux / Shell#Shell/Terminal/终端 freeze 卡住不动？|Shell/Terminal/终端 freeze 卡住不动？]]
             - [[#Linux / Shell#tmux -ls 找不到 session 显示 failed to connect to server: Connection refused|tmux -ls 找不到 session 显示 failed to connect to server: Connection refused]]
+            - [[#Linux / Shell#Shebang line|Shebang line]]
+            - [[#Linux / Shell#实时查看Nvidia-smi的使用情况（自动刷新）|实时查看Nvidia-smi的使用情况（自动刷新）]]
 
 == Linux / Shell ==
 
@@ -87,6 +89,22 @@ ref : https://stackoverflow.com/questions/9668763/why-am-i-getting-a-failed-to-c
 
 (待验证)
 
+=== Shebang line ===
 
+`#!PATH_TO_INTERPRETER`
+
+todo ref : https://blog.csdn.net/u012294618/article/details/78427864
+
+=== 实时查看Nvidia-smi的使用情况（自动刷新） ===
+
+1. 定时刷新
+watch -n 2 -d nvidia-smi
+每隔2秒刷新一次，每次只在固定位置刷新
+
+2. 定时查询
+nvidia-smi -l 2
+每隔2秒查询一下，但是每次的查询结果会接着上一个往下刷新，导致持续扩张terminal的历史log
+
+ref : https://blog.csdn.net/clksjx/article/details/120211061
 
 

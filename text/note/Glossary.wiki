@@ -1,0 +1,7 @@
+indent：缩进，增加缩进
+
+Outdent：减少缩进
+
+hanging indent：悬挂缩进，又叫hanging paragraph，指除了第一行不缩进外，其余各行都缩进的效果。
+
+

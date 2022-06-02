@@ -1,5 +1,15 @@
 
 
+物理
+
+collider / collision
+{{{
+    Physics.IgnoreCollision(ball.collider, this.collider);
+}}}
+
+rays
+
+
 
 
 == Tips ==
@@ -11,7 +21,7 @@ Main Memu -> GameObjects -> Align View to Selected
 
 注意：仅同步位置，不代表视角/画面相同
 
-ref : https://www.cnblogs.com/minuy/p/13525247.html
+https://www.cnblogs.com/minuy/p/13525247.html
 
 === Unity 使用 vs code vscode 作为代码编辑器 editor ===
 

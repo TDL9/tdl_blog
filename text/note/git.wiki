@@ -98,26 +98,126 @@ LEFT
     
 }}}
 
+== git 查看信息专题 ==
 
-== Tips ==
+=== git查看提交修改的文件列表 / commit相关信息 ===
+
+git show / git log 技巧
+
+todo : https://blog.csdn.net/hunter168_wang/article/details/121497595
+
+=== git 查看暂存区 ===
+
+todo : https://blog.csdn.net/qq_40021015/article/details/121741959
+
+=== git diff 技巧 ===
+
+todo : https://blog.csdn.net/weixin_44038264/article/details/119729593
 
 === git diff 输出的结果什么意思？ ===
 
 ref : https://blog.csdn.net/shaotianyang12/article/details/122025393
 
-=== Git Switch branch without files checkout 切换分支不改变 worktree index 文件 ===
+
+----
+
+== 开放问题 ==
+
+=== 如何避免提交debug用的代码（如输出中间变量） ===
+
+==== solution_1 ====
+
+https://blog.jonschneider.com/2021/01/configuring-git-to-prevent-commits-of.html
+
+用 pre-commit hook 检查是否存在 "DONOTCOMMIT"
+
+{{{bash class="code"
+#!/bin/bash
+
+FOUND=$(git diff-index --cached -U0 HEAD -- | grep DONOTCOMMIT | wc -l)
+
+if [[ $FOUND -gt 0 ]]; then
+    echo "pre-commit hook: DONOTCOMMIT detected, commit not allowed"
+    echo "(enforced from: ~/.git_templates/hooks/pre-commit)"
+    exit 1
+fi
+}}}
+
+缺点：需要手动删除 / commit -p
+
+其他相似 pre-commit hook :
+- https://gist.github.com/wacko/62560b45c1d191859d6b
+- https://anotherdatum.com/avoid-committing-junk.html
+
+==== solution_2 ====
+
+https://stackoverflow.com/questions/43896214/how-to-not-commit-temporary-debug-statements
+
+新建分支 `hotfix` 开发和debug，再 cherry-pick。
+
+{{{bash class="code"
+git checkout master
+git cherry-pick hotfix
+# solve the conflict files manually and keep the form you want
+git add .
+git cherry-pick --continue
+}}}
+
+基本没用，cherry-pick 尚不支持 --patch。你需要
+{{{
+git cherry-pick -n <commit> (--no-commit)
+git reset
+git add -p
+}}}
+没有提示也非强制，还是可能误提交。
+
+ref : https://stackoverflow.com/questions/1526044/partly-cherry-picking-a-commit-with-git
+
+
+
+----
+
+
+== Tips ==
+
+=== Git Switch branch without files checkout | 切换分支不改变 worktree index 文件 ===
 
 git symbolic-ref HEAD refs/heads/otherbranch
 
 ref : https://stackoverflow.com/questions/1282639/switch-git-branch-without-files-checkout
 
-*待验证*
+*待验证* : 
 下面还有一个回答，只使用 git 基础指令 ("porcelain commands" in [[https://git-scm.com/book/en/v2|Progit]])
 基本上是借用一个临时分支进行 reset。而关键在于：当你 checkout 的分支和 HEAD 实际指向同一个 commit 时，worktree 不会被改动。
 
 === github personal access tokens 在哪？ ===
 
 右上角头像 -> Settings -> 左侧 Developer settings -> 左侧 Personal access tokens
+
+=== 全局 hook ===
+
+{{{bash class="code"
+git config --global init.templatedir '~/.git_template'
+}}}
+
+将 hooks 放入 `~/.git_template/hooks` 即可。
+
+ref : https://stackoverflow.com/questions/2293498/applying-a-git-post-commit-hook-to-all-current-and-future-repositories
+
+已经存在的 repo，可再次运行 `git init` 来应用 template
+
+ref : https://git-scm.com/docs/git-init
+
+=== 搭建 ssh git 服务器 ===
+
+基本只要在能够 ssh 的服务器上，通过 `git init --bare` 初始化一个裸仓库就可以了。
+
+更详细请参考 : https://zhuanlan.zhihu.com/p/146408354
+
+todo : 配置 ssh 密钥部分
+
+还可通过 `git instaweb` 启动一个简单的网页服务，浏览 repo 信息。
+
 
 
 

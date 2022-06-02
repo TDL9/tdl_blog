@@ -2,6 +2,7 @@
         - [[#其他资源合集|其他资源合集]]
         - [[#网页|网页]]
         - [[#软件、应用、扩展|软件、应用、扩展]]
+            - [[#软件、应用、扩展#工程管理 project management|工程管理 project management]]
         - [[#Linux_Tools|Linux_Tools]]
         - [[#功能型网页|功能型网页]]
             - [[#功能型网页#待验证|待验证]]
@@ -14,9 +15,14 @@
 
 TODO : 对于写过 note / tutor 的词条，应加上链接
 
+
+
 == 其他资源合集 ==
 
 现代CLI工具 : https://jvns.ca/blog/2022/04/12/a-list-of-new-ish--command-line-tools/
+
+免费照片艺术图片 : Unsplash
+
 
 
 
@@ -25,6 +31,8 @@ TODO : 对于写过 note / tutor 的词条，应加上链接
 有道翻译
 
 DeepL
+
+
 
 
 == 软件、应用、扩展 ==
@@ -39,6 +47,8 @@ Everything (searching on local devices)
 
 Wireshark (network packet)
 
+=== 工程管理 project management ===
+
 Atlassian:
 - Trello : A project management tool (可用于游戏开发 并非完全免费 web端)
     - thx to @秦无邪OvO https://www.bilibili.com/video/BV1Qa4y1Y716
@@ -48,9 +58,12 @@ Atlassian:
     - https://www.atlassian.com/zh/software/jira/comparison/jira-vs-trello#
 
 planka (Trello开源替代) https://planka.app/
+openproject : https://www.openproject.org/
 - 更多 : https://github.com/awesome-selfhosted/awesome-selfhosted#task-management--to-do-lists
 
 Gitea
+
+
 
 == Linux_Tools ==
 
@@ -62,6 +75,8 @@ Gitea
 - mdp
 - vim
 - glow?
+- sed?
+
 
 == 功能型网页 ==
 
@@ -74,6 +89,8 @@ https://web.archive.org/
 === 待验证 ===
 
 json 浏览器/可视化 : https://jsonhero.io/
+
+
 
 
 == 教程、手册、书籍 ==

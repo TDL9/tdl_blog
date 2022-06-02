@@ -1,9 +1,33 @@
 = 笔记 =
 
+</br>
+
 %% [[note_syntax]]
 
 
+== Theory ==
+
+[[graphics/index|图形学]]
+
+</br>
+
+== Lang ==
+
+[[formal_language|Formal Language]]
+
+[[programming_language|Programming Language]]
+
+[[c_sharp|C#]]
+
+</br>
+
+== Tool ==
+
 [[git|Git]]
+
+</br>
+
+== GameDev ==
 
 [[unity|Unity3D]]
 
@@ -11,10 +35,12 @@
 
 [[vim|Vim]]
 
-[[formal_language|Formal Language]]
+</br>
+
+
 
 [[QA|问题合集]]
 
+[[Glossary]]
 
-[[programming_language|Programming Language]]
 
