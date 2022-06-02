@@ -1,6 +1,6 @@
 == 基本语法 ==
 
-{{{
+{{{C# class="code"
 var names = new List<string> { "<name>", "Ana", "Felipe" };
 foreach (var name in names)
 {
@@ -47,6 +47,6 @@ a?[i]               //
 
 ref : https://www.cnblogs.com/youmingkuang/p/11459615.html
 
-ref : https://blog.csdn.net/ldy/article/details/104586969?spm=1001.2101.3001.6650.4&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-4-104586969-blog-108887398.pc_relevant_scanpaymentv1&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-4-104586969-blog-108887398.pc_relevant_scanpaymentv1&utm_relevant_index=9 
+ref : https://blog.csdn.net/ldy/article/details/104586969
 
 
