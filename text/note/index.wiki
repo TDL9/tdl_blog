@@ -9,6 +9,8 @@
 
 [[graphics/index|图形学]]
 
+[[mathematical_logic|数理逻辑]]
+
 </br>
 
 == Lang ==

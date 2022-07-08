@@ -1,0 +1,7 @@
+== Mathematical Logic 2nd 读书笔记 ==
+
+Authors : H.-D. Ebbinghaus / J. Flum / W. Thomas
+
+=== 前言 ===
+
+

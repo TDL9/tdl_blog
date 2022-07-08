@@ -68,14 +68,30 @@ Gitea
 == Linux_Tools ==
 
 - zsh
+    - oh-my-zsh
+- git
+    - lazygit
+
 - neofetch
 - tmux
 - tldr
-- fd
+- fd (fd-find)
 - mdp
-- vim
 - glow?
 - sed?
+- brew
+- vim
+    - space vim
+- pandoc
+- ranger
+- codex CLI
+- github copilot
+- serve
+
+
+
+
+- ius (in centos)
 
 
 == 功能型网页 ==
