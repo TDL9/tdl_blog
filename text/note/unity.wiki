@@ -27,4 +27,33 @@ https://www.cnblogs.com/minuy/p/13525247.html
 
 ref : https://code.visualstudio.com/docs/other/unity
 
+=== TODO ===
+
+Manual
+Editor Features
+The Scene view
+Using custom Editor tools
+Gizmos menu
+Comparison of UI systems in Unity
+UI Toolkit
+Custom Editors
+
+
+Script Ref
+
+Handles
+Resources
+Gizmos.DrawGUITexture
+Gizmos.DrawIcon
+EditorGUI.BeginChangeCheck
+
+
+
+
+uGUI, IMGUI, UIelements, ui toolkit
+unity detect inspector change
+prefab 继承关系
+
+GetComponent<Renderer>()
+gameObject.transform.GetChild(0)
 

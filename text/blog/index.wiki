@@ -4,5 +4,7 @@
 
 [[paradox|悖论]]
 
+[[OpenAI Codex|codex]]
 
+[[Windows Tips|windowstips]]
 

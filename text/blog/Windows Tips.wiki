@@ -1,0 +1,8 @@
+
+
+
+== Windows shortcut ==
+
+alt + esc 以窗口第一次打开的顺序循环切换窗口
+
+ref : https://www.computerhope.com/jargon/a/alt-esc.htm

@@ -116,8 +116,15 @@ todo : https://blog.csdn.net/weixin_44038264/article/details/119729593
 
 === git diff 输出的结果什么意思？ ===
 
-ref : https://blog.csdn.net/shaotianyang12/article/details/122025393
+todo : https://blog.csdn.net/shaotianyang12/article/details/122025393
 
+=== git 上下箭头是什么意思? (常见于 git客户端 或 shell prompt) ===
+
+- ↑表示本地分支 *领先* 于远程分支多少commit
+
+- ↓表示本地分支 *落后* 于远程分支多少commit
+
+ref : https://blog.csdn.net/qq_42764468/article/details/125377758
 
 ----
 
@@ -172,6 +179,15 @@ git add -p
 没有提示也非强制，还是可能误提交。
 
 ref : https://stackoverflow.com/questions/1526044/partly-cherry-picking-a-commit-with-git
+
+
+
+=== 换行符专题 ===
+
+问题描述 : Windows 下默认换行符为 <CR><LF> 而 Max 和 Linux 为 <LF>
+
+CR : Carriage Return 回车
+LF : Line Feed 换行
 
 
 

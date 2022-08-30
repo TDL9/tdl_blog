@@ -87,8 +87,20 @@ Gitea
 - codex CLI
 - github copilot
 - serve
+- w3m (terminal web browser) : http://w3m.sourceforge.net/
 
-
+- suckless
+    - dwm
+    - st (simple terminal)
+- wayland
+    - wayfire
+    - sway
+        - waybar : https://github.com/Alexays/Waybar
+        - Swayr & Swayrbar : https://sr.ht/~tsdh/swayr/
+        - swayws : https://github.com/hw0lff/swayws
+        - workstyle : https://github.com/pierrechevalier83/workstyle
+        - swaywsr : https://github.com/pedroscaff/swaywsr
+        - wdisplays : https://github.com/artizirk/wdisplays
 
 
 - ius (in centos)
@@ -114,6 +126,8 @@ json 浏览器/可视化 : https://jsonhero.io/
 https://missing.csail.mit.edu/
 
 https://git-scm.com/book/en/v2
+
+Learn X in Y minutes : 学习各种编程语言的基础语法+一些常用工具+小部分理论入门 https://learnxinyminutes.com/
 
 == 游戏 ==
 
